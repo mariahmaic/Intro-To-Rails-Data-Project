@@ -3,8 +3,13 @@
 </div>
 
 <div class="container">
-  <% @pokemons.each do |pokemon| %>
-    <li><%= link_to pokemon.name %>
-    <%= link_to pokemon.location %></li>
+  <% unless @pokemons.nil? %>
+    <% @pokemons.each do |pokemon| %>
+      <li><%= link_to pokemon.name %>
+      <%= link_to pokemon.location %>
+      <%= link_to pokemon.move %></li>
+    <%end %>
   <%end %>
 </div>
+
+<%= will_paginate @pokemons, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>

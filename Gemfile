@@ -8,6 +8,9 @@ gem 'excon'
 
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 
+gem 'will_paginate', '~> 3.1.1'
+gem 'will_paginate-bootstrap-style'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
