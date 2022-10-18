@@ -8,15 +8,15 @@
 
 require "faker"
 
-200.times do
-  name = Faker::Games::Pokemon.name
-  pokemons = Pokemon.new(
-    name: name,
-    location: Faker::Games::Pokemon.location,
-    move: Faker::Games::Pokemon.move
-  )
-  pokemons.save
-end
+# 200.times do
+#   name = Faker::Games::Pokemon.name
+#   pokemons = Pokemon.new(
+#     name: name,
+#     location: Faker::Games::Pokemon.location,
+#     move: Faker::Games::Pokemon.move
+#   )
+#   pokemons.save
+# end
 
 200.times do
   character = Faker::Movies::HarryPotter.character
