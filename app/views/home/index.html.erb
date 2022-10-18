@@ -1,3 +1,10 @@
 <div class="d-flex align-items-center justify-content-center">
-  <h1>Hello WOrld!!!!</h1>
+  <h1>LIST OF POKEMON</h1>
+</div>
+
+<div class="container">
+  <% @pokemons.each do |pokemon| %>
+    <li><%= link_to pokemon.name %>
+    <%= link_to pokemon.location %></li>
+  <%end %>
 </div>
