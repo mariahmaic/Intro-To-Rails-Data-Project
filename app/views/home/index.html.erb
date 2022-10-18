@@ -10,6 +10,13 @@
       <%= link_to pokemon.move %></li>
     <%end %>
   <%end %>
+  <% unless @harrypotters.nil? %>
+    <% @harrypotters.each do |harrypotter| %>
+      <li><%= link_to harrypotter.character %>
+      <%= link_to harrypotter.house %>
+      <%= link_to harrypotter.quote %></li>
+    <%end %>
+  <%end %>
 </div>
 
 <%= will_paginate @pokemons, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
