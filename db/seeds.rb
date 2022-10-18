@@ -17,3 +17,13 @@ require "faker"
   )
   pokemons.save
 end
+
+200.times do
+  character = Faker::Movies::HarryPotter.character
+  harrypotters = HarryPotter.new(
+    character: character,
+    house: Faker::Movies::HarryPotter.house,
+    quote: Faker::Movies::HarryPotter.quote
+  )
+  harrypotters.save
+end
